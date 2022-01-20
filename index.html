@@ -1,0 +1,643 @@
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+        <header id="header">
+        </header>
+        <div id="main">
+            <div class="container">
+                <h1>
+                    <p class="text-primary">
+                        <span>Auto Metaformer: Audio Demo </span>
+                    </p>
+                </h1>
+                <section>
+                    <h2>
+                        <p class="fs-3">
+                            <span> Code is released <a
+                                    href="https://github.com/licaiwang/AUTO_VC_tensorflow2.0">here</a>.
+                            </span>
+                        </p>
+                    </h2>
+                </section>
+
+
+                <section>
+                    <h4>
+                        <p> Below are a few demo audios.</p>
+                    </h4>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p><span>Source Speaker / Speech</span></p>
+
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p><span>Target Speaker / Speech</span>
+                                        <p></p>
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p> <span>Target Model</span>
+                                        <p></p>
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p> <span>Result</span>
+                                        <p></p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="0" style="
+    background-color: lightgreen;
+    border: 3px solid black;
+">
+                                        <p>p237 (Male)</p><audio controls="">
+
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1jezlVZr2bpqT9Z5hhqXCGUxMM1cLetDK">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1jezlVZr2bpqT9Z5hhqXCGUxMM1cLetDK"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                    <td rowspan="0" style="
+    background-color: bisque;
+    border: 3px solid black;
+">
+
+                                        <p>p256 (Male)</p> <audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1bZTqcM3Iy2LAnnWwseGaWm9LvlvcPJnY">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1bZTqcM3Iy2LAnnWwseGaWm9LvlvcPJnY"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+">
+                                        <span> AutoVC</span>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="" style="background-color: #e5d6d6;">
+
+
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=19VJjn8nMAtRbevu9nOLTv6vUKUdrm_DD">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=19VJjn8nMAtRbevu9nOLTv6vUKUdrm_DD"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+">
+                                        <span> MlP </span>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=16Hq6m2MrHwrOk-iWAgTVpRK-GUL-SXzr">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=16Hq6m2MrHwrOk-iWAgTVpRK-GUL-SXzr"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"> Poolformer </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1-pePU3pMZrtS2FKzub1uo43wD5i6rRbe">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1-pePU3pMZrtS2FKzub1uo43wD5i6rRbe"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"> Convformer* </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1miujf5DTJ9hh3xP1PwFQRk6-ZM7pQ70k">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1miujf5DTJ9hh3xP1PwFQRk6-ZM7pQ70k"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Demo block -->
+                    <br>
+                    <!-- Start One Demo block -->
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p><span>Source Speaker / Speech</span></p>
+
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p><span>Target Speaker / Speech</span>
+                                        <p></p>
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p> <span>Target Model</span>
+                                        <p></p>
+                                    </th>
+                                    <th style="
+    background-color: #f19797;
+    border: 3px solid black;
+">
+                                        <p class="lh-base">
+                                        </p>
+                                        <p></p> <span>Result</span>
+                                        <p></p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="0" style="
+    background-color: lightgreen;
+    border: 3px solid black;
+">
+                                        <p>p245 (Male)</p><audio controls="">
+
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1l-JWwl5Ct07Ig-jZxAyq-sjDzZt0WftS">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1l-JWwl5Ct07Ig-jZxAyq-sjDzZt0WftS"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                    <td rowspan="0" style="
+    background-color: bisque;
+    border: 3px solid black;
+">
+
+                                        <p>p238 (Female)</p> <audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1z-w4VDS8aST3AeUPWKYVZzb_V-_u_HpC">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1z-w4VDS8aST3AeUPWKYVZzb_V-_u_HpC"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+">
+                                        <span> AutoVC</span>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="" style="background-color: #e5d6d6;">
+
+
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1yVuNu97DTkntzsJyNN1ObJ6i-WC_Jahb">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1yVuNu97DTkntzsJyNN1ObJ6i-WC_Jahb"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+">
+                                        <span> MlP </span>
+                                    </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1cIq7WyjMqVrjHgsXDTqLuNieiLOJwisl">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1cIq7WyjMqVrjHgsXDTqLuNieiLOJwisl"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+">  Poolformer </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source
+                                                src="https://drive.google.com/uc?export=download&id=1TxBKeeBStbsnnag0AgXa9dm37BTQt1Cb">
+                                            <embed height="50"
+                                                src="https://drive.google.com/uc?export=download&id=1TxBKeeBStbsnnag0AgXa9dm37BTQt1Cb"
+                                                width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"> Convformer* </td>
+                                    <td style="
+    background-color: #e5d6d6;
+    border: 3px solid black;
+"><audio controls="">
+                                            <source src="https://drive.google.com/uc?export=download&id=19hy6imvHOCIzHEzULLmlNDDqYUIoVZlQ"><embed height="50" src="https://drive.google.com/uc?export=download&id=19hy6imvHOCIzHEzULLmlNDDqYUIoVZlQ" width="100">
+                                        </audio>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Demo block -->
+<br>
+
+<h4>
+    <p> Below are a Zero-shot demo audios.</p>
+</h4>
+ <!-- Start One Demo block -->
+ <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p><span>Source Speaker / Speech</span></p>
+
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p><span>Target Speaker / Speech</span>
+                    <p></p>
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p> <span>Target Model</span>
+                    <p></p>
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p> <span>Result</span>
+                    <p></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="0" style="
+background-color: lightgreen;
+border: 3px solid black;
+">
+                    <p>p243 (Seen Male)</p><audio controls="">
+
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1I_rfv_-d5RbMMmshFIfRPcYOjXbiZclZ">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1I_rfv_-d5RbMMmshFIfRPcYOjXbiZclZ"
+                            width="100">
+                    </audio>
+                </td>
+                <td rowspan="0" style="
+background-color: bisque;
+border: 3px solid black;
+">
+
+                    <p>p351 (Unseen Female)</p> <audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1uaiSBEuyHjhpGZwA064YpgVcpigQulYR">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1uaiSBEuyHjhpGZwA064YpgVcpigQulYR"
+                            width="100">
+                    </audio>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">
+                    <span> AutoVC</span>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="" style="background-color: #e5d6d6;">
+
+
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1X6qVz-KuLGeEm8A520HXVPUDDxBB9Y63">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1X6qVz-KuLGeEm8A520HXVPUDDxBB9Y63"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">
+                    <span> MlP </span>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1zbEQDtzGtPtT8yhjSHHFXOKSO6ygyMTZ">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1zbEQDtzGtPtT8yhjSHHFXOKSO6ygyMTZ"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">  Poolformer </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=15yQqKpLcQOxeLnNR6nreUIDpedORidyQ">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=15yQqKpLcQOxeLnNR6nreUIDpedORidyQ"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"> Convformer* </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source src=""><embed height="50" src="" width="100">
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- End Demo block -->
+
+<br>
+ <!-- Start One Demo block -->
+ <div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p><span>Source Speaker / Speech</span></p>
+
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p><span>Target Speaker / Speech</span>
+                    <p></p>
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p> <span>Target Model</span>
+                    <p></p>
+                </th>
+                <th style="
+background-color: #f19797;
+border: 3px solid black;
+">
+                    <p class="lh-base">
+                    </p>
+                    <p></p> <span>Result</span>
+                    <p></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="0" style="
+background-color: lightgreen;
+border: 3px solid black;
+">
+                    <p>p360 (UnSeen Male)</p><audio controls="">
+
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1NxtooDMdti9Gd5HO3eivkktZNuGzmtEO">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1NxtooDMdti9Gd5HO3eivkktZNuGzmtEO"
+                            width="100">
+                    </audio>
+                </td>
+                <td rowspan="0" style="
+background-color: bisque;
+border: 3px solid black;
+">
+
+                    <p>p345 (Unseen Male)</p> <audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1bi0DDoU7XWP7Vja50pha2w3Tf54b2FVQ">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1bi0DDoU7XWP7Vja50pha2w3Tf54b2FVQ"
+                            width="100">
+                    </audio>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">
+                    <span> AutoVC</span>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="" style="background-color: #e5d6d6;">
+
+
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1wCgEoFN8BoaALYrSkB_1zPubA-homS83">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1wCgEoFN8BoaALYrSkB_1zPubA-homS83"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">
+                    <span> MlP </span>
+                </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1ANPz-f_oqBRW9yoLqVmaysf0nSdKgLix">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1ANPz-f_oqBRW9yoLqVmaysf0nSdKgLix"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+">  Poolformer </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source
+                            src="https://drive.google.com/uc?export=download&id=1jG2lsApJzhpYvzHKhf5xYXasxpW92wgt">
+                        <embed height="50"
+                            src="https://drive.google.com/uc?export=download&id=1jG2lsApJzhpYvzHKhf5xYXasxpW92wgt"
+                            width="100">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"> Convformer* </td>
+                <td style="
+background-color: #e5d6d6;
+border: 3px solid black;
+"><audio controls="">
+                        <source src=""><embed height="50" src="" width="100">
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- End Demo block -->
+
+                    </h4>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
